@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    width: 20%;
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 2rem;
+    background: #4CAF50;
+    color: #fff;
+    opacity: 0.9;
+}
+
+h4 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url('img/background.jpg');
+}
+
+header {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: "icon-bar header-title nav-link";
+}
+
+header .icon-bar {
+    grid-area: icon-bar;
+}
+
+header .header-title {
+    grid-area: header-title;
+}
+
+header .nav-link {
+    grid-area: nav-link;
+}
+
+.icon-bar {
+    display: flex;
+    flex-direction: column;
+    width: 75px;
+    background-color: #555;
+}
+
+.icon-bar a {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.slider-stripe__link {
+    opacity: 0.9;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background: #4CAF50;
+    opacity: 0.7;
+    width: 35rem;
+    height: 7rem;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    background-color: #555;
+    height: 5.5rem;
+}
+
+.nav-link a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.nav-link a:hover {
+    background-color: #000;
+}
+
+.slider {
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+#stripe {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 2s;
+}
+
+/* Images in the slider */
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+    width: 800px;
+    background: #4CAF50;
+    opacity: 0.9;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.conteiner-png-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    opacity: 0.9;
+}
+
+.png-items {
+    width: 13rem;
+}
+
+.png-items__text {
+    display: flex;
+    justify-content: center;
+    font-family: 'Special Elite', cursive;
+    opacity: 0.9;
+    font-size: 1.7rem;
+    background: #4CAF50;
+    color: #fff;
+
+}
+
+.conteiner-gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem;
+}
+
+footer {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-image: url('img/background\ footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.map-and-feedback {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.map iframe {
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+    background-color: #fff;
+    box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+
+}
+
+/* Feedback body */
+
+input,
+button,
+textarea {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    background-image: none;
+    background-color: #dadad3;
+    box-shadow: none;
+    padding: .5rem;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+textarea {
+    height: 6rem;
+    resize: vertical;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.feedback-card {
+    margin-top: 4rem;
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+    background-color: #fff;
+    box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+}
+
+.feedback-header {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+.feedback-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-body__message {
+    margin-top: 10px;
+}
+
+.feedback-body button {
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media__items {
+    display: flex;
+    width: 7rem;
+}
+
+.social-media__link {
+    background: black;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+/*Responsibility for adopting screens for different width*/
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .slider {
+        width: 500px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6 {
+        width: 500px;
+        font-size: 1rem;
+    }
+
+    .png-items {
+        width: 10rem;
+    }
+
+    .png-items__text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 10px;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header-title"
+                             "icon-bar"
+                             "nav-link";
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .header-title {
+        width: 100%;
+        margin-top: 0;
+        opacity: 1;
+    }
+
+    .slider {
+        width: 290px;
+        margin-top: 4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6 {
+        width: 290px;
+        font-size: 0.5rem;
+    }
+
+    .png-items {
+        width: 7rem;
+    }
+
+    .png-items__text {
+        font-size: 1rem;
+    }
+
+    .icon-bar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .icon-bar a {
+        padding: 15px;
+    }
+
+    .link a {
+        justify-content: center;
+    }
+
+    .conteiner-png-images {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .map-and-feedback {
+        flex-direction: column;
+    }
+
+    .feedback-body button {
+        margin-top: 2px;
+    }
+}
